@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>web page</title>
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <nav>
+        <div class="con">
+            <p>Placement Cell Management System</p>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="reg.html">Registration</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="About.html">About</a></li>
+            
+        </ul>
+    </nav>
+    <div class="img">
+        <img id="slider" src="0.jpg" />
+        <div class="text">Placement Cell Managment System</div>
+        </div>
+       
+    <footer>
+        <marquee>Placement Cell Managment System.......| Placement Cell Managment System.......| Placement Cell Managment System.......| Placement Cell Managment System.......
+            
+        </marquee>
+    </footer>
+    <script>
+        let arr=['0.jpg','1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg']
+        let slider_ref=document.getElementById("slider")
+        let i=0
+
+        function change_img(){
+            i=i+1
+           
+            if(i>arr.length-1)
+            {
+                i=0
+            }
+            
+            slider_ref.src=arr[i]
+        }
+        setInterval(change_img,3000)
+
+
+    </script>
+</body>
+
+</html>
